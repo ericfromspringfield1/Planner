@@ -7,7 +7,7 @@ namespace Planner
         static void Main(string[] args)
         {
             City Megalopis = new City ("Megalopis", 1985);
-            Megalopis.mayor = "Robert Pattinson";
+            Megalopis.mayor = "Marion Barry";
 
 
             Building FiveOneTwoEigth = new Building("512 8th Avenue");
@@ -16,8 +16,8 @@ namespace Planner
                 FiveOneTwoEigth.Depth = 400;
                 FiveOneTwoEigth.Stories = 6;
                 FiveOneTwoEigth.Construct();
-                FiveOneTwoEigth.Purchase("Michael");
-                FiveOneTwoEigth.Designer("TurdBoi");
+                FiveOneTwoEigth.Purchase("Shady Grady");
+                FiveOneTwoEigth.Designer("Heathclif Huxtable");
                 FiveOneTwoEigth.Description();
                 Megalopis.Buildings.Add(FiveOneTwoEigth);
 
@@ -29,8 +29,8 @@ namespace Planner
                 ThreeTwoOne.Depth = 200;
                 ThreeTwoOne.Stories = 2;
                 ThreeTwoOne.Construct();
-                ThreeTwoOne.Purchase("Ryan Gosling");
-                ThreeTwoOne.Designer("Jakey G");
+                ThreeTwoOne.Purchase("Phillip Drummond");
+                ThreeTwoOne.Designer("Michael Brady");
                 ThreeTwoOne.Description();
                 Megalopis.Buildings.Add(ThreeTwoOne);
             }
@@ -40,8 +40,8 @@ namespace Planner
                 ThreeFiveOneZero.Depth = 300;
                 ThreeFiveOneZero.Stories = 1;
                 ThreeFiveOneZero.Construct();
-                ThreeFiveOneZero.Purchase("Joaquin Phoenix");
-                ThreeFiveOneZero.Designer("Leonardo DeVinci");
+                ThreeFiveOneZero.Purchase("Ray Perkins");
+                ThreeFiveOneZero.Designer("Paul W. Bryant");
                 ThreeFiveOneZero.Description();
                 Megalopis.Buildings.Add(ThreeFiveOneZero);
 

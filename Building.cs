@@ -14,23 +14,29 @@ namespace Planner
 
         public int Stories { get; set; }
         public double Width { get; set; }
-        public double Depth 
+        public double Depth {get; set;}
+        private double Volume  
         // Volume should be read-only and should return width * depth * (3 * # of stories). Each story is 3 meters high.
         {
         get {
             return Width * Depth * (3 * Stories);
             }
         }
-
+// Define a constructor method that accepts a single string argument - address - so that you can send as a parameter 
+// when you create each instance with new Building("800 8th Street");.
+// The constructor's logic should set the _address field's value to the argument value
         public Building(string address)
         {
             {
          _address = address;
             }
         }
+        // Define a Construct() method. The method's logic should set the _dateConstructed field's value to DateTime.Now
         public void Construct() {
     _dateConstructed = DateTime.Now;
     }
+    // Define a Purchase() method. The method should accept a single string argument of the name of the person purchasing a building. 
+    // The method should take that string and assign it to the private _owner field.
     public void Purchase(string NameOfBuyer) {
         _owner = NameOfBuyer;
     }
